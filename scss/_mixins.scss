@@ -1,4 +1,4 @@
-@mixin skillProfile($url){
+@mixin skillProfile($url) {
   background: url($url);
   background-position: center;
   background-size: contain;
@@ -8,11 +8,16 @@
   border-radius: 50%;
 }
 
-@mixin flexColumn(
-  $rowGap: 10px,
-  $alignItens: center,
-  $justifyContent: center
-) {
+@mixin portfolioPics($url) {
+  background: url($url);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vh;
+  height: 40vh;
+}
+
+@mixin flexColumn($rowGap: 10px, $alignItens: center, $justifyContent: center) {
   display: flex;
   flex-direction: column;
   row-gap: $rowGap;
