@@ -1,11 +1,4 @@
-body {
-  background-image: url();
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@mixin skillProfile($url) {
+@mixin skillProfile($url){
   background: url($url);
   background-position: center;
   background-size: contain;
@@ -15,7 +8,11 @@ body {
   border-radius: 50%;
 }
 
-@mixin flexColumn($rowGap: 10px, $alignItens: center, $justifyContent: center) {
+@mixin flexColumn(
+  $rowGap: 10px,
+  $alignItens: center,
+  $justifyContent: center
+) {
   display: flex;
   flex-direction: column;
   row-gap: $rowGap;
